@@ -1,0 +1,8 @@
+*.jks
+*.keystore
+*.p12
+*.p8
+*.mobileprovision
+*.clixml
+*.env
+__pycache__/
