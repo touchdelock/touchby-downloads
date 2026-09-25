@@ -1,0 +1,76 @@
+/* Standalone download page. Brand typography and components are shared with BASE v7. */
+.tb-download-page body { margin: 0; }
+.tb-download-page *, .tb-download-page *::before, .tb-download-page *::after { box-sizing: border-box; }
+.tb-download-page a { text-underline-offset: 5px; }
+.download-shell { width: min(1440px, calc(100% - 80px)); margin: 0 auto; }
+.download-header { display: flex; align-items: center; justify-content: space-between; gap: 28px; min-height: 140px; padding: 42px 0 30px; border-bottom: 1px solid var(--tb-ink); position: relative; }
+.download-brand { font-size: 42px; font-weight: 600; line-height: 1.2; letter-spacing: -.07em; text-decoration: none; flex-shrink: 0; }
+.download-brand span { font-weight: 500; letter-spacing: -.075em; }
+.download-nav { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 24px; }
+.download-nav a { font-size: 13px; font-weight: 450; line-height: 1.6; padding: 10px 0; text-decoration: none; white-space: nowrap; }
+.download-nav a:hover, .download-nav a[aria-current] { text-decoration: underline; text-underline-offset: 7px; text-decoration-thickness: 1px; }
+.download-menu { display: none; }
+.tb-download-page .tb-page-heading .tb-lead { max-width: 650px; }
+.tb-download-page .tb-download-card { scroll-margin-top: 24px; }
+.tb-download-page .download-description { color: var(--tb-muted); margin-top: -10px !important; margin-bottom: 28px !important; }
+.tb-download-page .download-platform { display: flex; flex-wrap: wrap; align-items: baseline; gap: 14px; margin-bottom: 14px !important; }
+.download-platform strong { font-size: 15px; font-weight: 500; }
+.download-platform > span { font-size: 12px; color: var(--tb-muted); }
+.tb-download-page .download-button { margin-bottom: 18px; max-width: 100%; }
+.download-button > span { font-family: Arial, sans-serif; font-size: 23px; line-height: 1; }
+.tb-download-page .download-meta { color: var(--tb-muted); font-size: 12px; line-height: 1.95; max-width: 44em; }
+.tb-download-page .download-ios { border-top: 1px solid var(--tb-line); padding-top: 20px; margin-top: 23px !important; margin-bottom: 20px !important; font-size: 13px; color: var(--tb-muted); }
+.download-guide { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 70px; border-top: 1px solid var(--tb-ink); padding: 45px 0 65px; }
+.download-guide-heading h2 { font-size: clamp(26px, 3.2vw, 42px); font-weight: 450; letter-spacing: -.045em; line-height: 1.5; }
+.tb-download-page .download-guide-heading p { margin-top: 22px; font-size: 13px; color: var(--tb-muted); line-height: 1.95; }
+.download-guide-body { min-width: 0; font-size: 14px; line-height: 1.95; }
+.tb-download-page .download-guide-body > p { margin-bottom: 16px; }
+.download-faq { margin-top: 32px; border-top: 1px solid var(--tb-line); }
+.download-faq details { border-bottom: 1px solid var(--tb-line); }
+.download-faq summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 0; list-style: none; cursor: pointer; font-weight: 500; }
+.download-faq summary::-webkit-details-marker, .download-menu summary::-webkit-details-marker { display: none; }
+.download-toggle { position: relative; width: 16px; height: 16px; flex: 0 0 16px; }
+.download-toggle::before, .download-toggle::after { position: absolute; top: 7px; left: 1px; width: 14px; height: 1px; background: currentColor; content: ""; }
+.download-toggle::after { transform: rotate(90deg); }
+details[open] > summary .download-toggle::after { transform: none; }
+.download-answer { padding: 0 20px 26px 0; font-size: 13px; color: var(--tb-muted); }
+.tb-download-page .download-answer p { margin: 0 0 14px; }
+.tb-download-page .download-answer p:last-child { margin-bottom: 0; }
+.download-answer ol { margin: 0 0 22px; padding-left: 1.6em; }
+.download-answer p + ol { margin-top: 18px; }
+.download-answer li + li { margin-top: 12px; }
+.tb-download-page .download-answer h3 { margin: 22px 0 6px; font-size: 14px; color: var(--tb-ink); font-weight: 500; }
+.download-copyright { margin: 0; padding: 0 0 30px; color: var(--tb-muted); font-size: 11px; }
+@media (max-width: 1100px) {
+  .download-shell { width: calc(100% - 48px); }
+  .download-nav { gap: 16px; }
+  .download-nav a { font-size: 12px; }
+  .download-guide { gap: 40px; }
+}
+@media (min-width: 768px) and (max-width: 1100px) {
+  .tb-download-page .download-description { min-height: 3.9em; }
+}
+@media (max-width: 767px) {
+  .download-shell { width: calc(100% - 36px); }
+  .download-header { min-height: 78px; padding: 17px 0; gap: 15px; }
+  .download-brand { font-size: 28px; }
+  .download-nav { display: none; }
+  .download-menu { display: block; }
+  .download-menu summary { display: flex; align-items: center; justify-content: flex-end; gap: 12px; min-height: 44px; font-size: 12px; cursor: pointer; list-style: none; }
+  .download-menu summary > span { width: 18px; height: 8px; border-top: 1px solid; border-bottom: 1px solid; }
+  .download-menu[open] summary > span { height: 1px; border-bottom: 0; }
+  .download-menu nav { position: absolute; z-index: 10; top: 100%; left: -18px; right: -18px; padding: 10px 18px 24px; background: var(--tb-paper); border-bottom: 1px solid var(--tb-ink); }
+  .download-menu nav a { display: block; padding: 14px 0; border-bottom: 1px solid var(--tb-line); font-size: 15px; text-decoration: none; }
+  .download-menu nav a[aria-current] { text-decoration: underline; text-underline-offset: 6px; }
+  .tb-download-page .tb-download-grid { margin-bottom: 32px; gap: 22px; }
+  .tb-download-page .download-description { margin-bottom: 24px !important; }
+  .tb-download-page .download-button { width: 100%; justify-content: space-between; font-size: 12px; padding: 13px 21px; }
+  .download-platform strong { font-size: 14px; }
+  .tb-download-page .download-meta { font-size: 12px; }
+  .download-guide { grid-template-columns: 1fr; gap: 26px; padding: 32px 0 42px; }
+  .download-guide-heading h2 { font-size: 27px; }
+  .tb-download-page .download-guide-heading p { margin-top: 14px; font-size: 12px; }
+  .download-guide-body { font-size: 13px; }
+  .download-faq summary { gap: 14px; font-size: 13px; }
+  .download-answer { font-size: 12px; padding-right: 8px; }
+}
