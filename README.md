@@ -7,7 +7,9 @@
 - [プライバシーポリシー](https://touchdelock.base.shop/p/00007)
 - [お問い合わせ](https://thebase.com/inquiry/touchdelock-base-shop)
 
-Android版の先行配布を開始しました。ロック 1.0.0 (32)・アラーム 1.0.0 (10)のAPKと導入案内は[先行公開リリース](https://github.com/touchdelock/touchby-downloads/releases/tag/android-2026-09-25-rc1)に掲載しています。
+Android版の先行配布を開始しました。ロック 1.0.1 (33)・アラーム 1.0.1 (11)のAPKと導入案内は[先行公開リリース](https://github.com/touchdelock/touchby-downloads/releases/tag/android-2026-09-26-rc1)に掲載しています。
+
+1.0.1では設定に「アプリのアップデート」「NFCカードの更新」を追加しました。更新のお知らせのオン・オフ、手動確認、同じ専用カードの旧形式から現在のURL付き形式への更新ができます。現在の形式なら書換えは不要です。1.0.0からは今回だけ配布ページで新版を取得してください。先行配布版を先に削除する必要はありません。
 
 製品署名・静的検査と自動テストは完了していますが、今回の公開版での通常ブラウザ導入、実物NFC、アラームの音・再鳴動の最終確認は残っています。先行版として、お使いの端末で短い動作確認を行ってから利用してください。
 
@@ -17,7 +19,7 @@ Android は署名済み APKを配布しています。iPhone は Apple の公証
 
 ## アプリの更新情報
 
-更新確認に対応するアプリ向けの静的フィードは [updates/v1.json](https://touchdelock.github.io/touchby-downloads/updates/v1.json) です。現行の配布版にこの機能があるという意味ではありません。
+更新確認に対応するアプリ向けの静的フィードは [updates/v1.json](https://touchdelock.github.io/touchby-downloads/updates/v1.json) です。Android 1.0.1から対応しています。
 
 公開済みで取得可能な版だけを記載します。署名ビルドや審査中の版は、公開された後に更新します。`available: false` は一般向けの更新版を案内していない状態であり、TestFlightの配布状態とは別です。build番号は商品・OSごとに比較します。
 
